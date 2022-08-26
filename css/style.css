@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+.fixednav{
+    position: fixed;
+    z-index: 1;
+}
+.topbar{
+    height: 30px;
+    width: 100vw;
+    /* position: fixed; */
+    background-color:red;
+    color: black;
+}
+.topbar img{
+    height: 30px;
+    width: 100px;
+    position: absolute;
+    left: 10px;
+}
+.topbar button{
+    /* color: white; */
+    /* border-radius: 5px; */
+    border:none;
+    background-color:red;
+    width: 50px;
+    position: relative;
+    left: 1140px;
+    margin-top: 3px;
+    cursor: pointer;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+.topbar button:hover{
+    background-color: black;
+    color: white;
+}
+.navbar {
+    background-color: rgb(244, 201, 201);
+    height: 50px;
+    width: 100%;
+    position: fixed;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    list-style: none;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-weight: bolder;
+}
+.navbar ul li a:hover{
+    background-color: black;
+   color:white;
+   border-radius: 5px;
+}
+
+.section {
+    /* background-color:pink; */
+    height: 800px;
+    width: 100%; 
+    position: relative;
+    top:80px;
+    text-align: center;
+    z-index: -1;
+}
+.section img{
+    height: 800px;
+    width: 100%;
+}
+.footer {
+    background-color: khaki;
+    height: 600px;
+    width: 100%;
+    text-align: center;
+    /* position: absolute;
+    bottom: 0px; */
+}
