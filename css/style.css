@@ -1,46 +1,51 @@
 * {
     padding: 0;
     margin: 0;
-    
+
 }
-.fixednav{
+
+.fixednav {
     position: fixed;
     z-index: 1;
 }
-.topbar{
+
+.topbar {
     height: 30px;
     width: 100vw;
     /* position: fixed; */
-    background-color:red;
+    background-color: #d8232a;
     color: black;
 }
-.topbar img{
+
+.topbar img {
     height: 30px;
     width: 100px;
     position: absolute;
     left: 10px;
 }
-.topbar button{
+
+.topbar button {
     /* color: white; */
     /* border-radius: 5px; */
-    border:none;
-    background-color:red;
+    border: none;
+    background-color: #d8232a;
     width: 50px;
     position: relative;
     left: 1140px;
     margin-top: 3px;
     cursor: pointer;
     font-family: 'Alumni Sans Pinstripe', sans-serif;
-    font-weight: bold;
+    font-weight:bold;
     font-size: large;
 }
 
-.topbar button:hover{
+.topbar button:hover {
     background-color: black;
     color: white;
 }
+
 .navbar {
-    background-color: rgb(244, 201, 201);
+    background-color: #de454a;
     height: 50px;
     width: 100%;
     position: fixed;
@@ -63,30 +68,357 @@
     font-family: 'Alumni Sans Pinstripe', sans-serif;
     font-weight: bolder;
 }
-.navbar ul li a:hover{
+
+.navbar ul li a:hover {
     background-color: black;
-   color:white;
-   border-radius: 5px;
+    color: white;
+    border-radius: 5px;
 }
 
 .section {
     /* background-color:pink; */
     height: 800px;
-    width: 100%; 
+    width: 100%;
     position: relative;
-    top:80px;
+    top: 80px;
     text-align: center;
     z-index: -1;
 }
-.section img{
+
+.section img {
     height: 800px;
     width: 100%;
+    opacity: 0.7;
 }
+
+.caption {
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+}
+
+.center {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.selectcity {
+    position: absolute;
+    top: 18%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    /* border-radius: 2px; */
+}
+
+.selectcity>select {
+    /* background-color: red; */
+    border-radius: 10px;
+    height: 25px;
+    width: 110px;
+
+}
+
+.selectbudget {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.selectbudget>select {
+    /* background-color: red; */
+    border-radius: 10px;
+    height: 25px;
+    width: 110px;
+}
+
+.selectproptype {
+    position: absolute;
+    top: 18%;
+    left: 63%;
+    transform: translate(-50%, -50%);
+}
+
+.selectproptype>select {
+    /* background-color: red; */
+    border-radius: 10px;
+    height: 25px;
+    width: 165px;
+}
+
+.propincity {
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 200px;
+    /* border: 2px solid red; */
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+}
+
+.newproj {
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 200px;
+    /* border: 2px solid red; */
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+}
+
+.propservices {
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 200px;
+    /* border: 2px solid red; */
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+}
+
 .footer {
-    background-color: khaki;
-    height: 600px;
+    background-color: #000000;
+    height: 900px;
     width: 100%;
+    color: white;
+}
+
+.propincity>div {
+    /* border: 1px solid black; */
+    height: 165px;
+    width: 200px;
+    margin: 15px;
     text-align: center;
-    /* position: absolute;
-    bottom: 0px; */
+}
+
+.propservices>div {
+    /* border: 2px solid black; */
+    height: 165px;
+    width: 200px;
+    margin: 15px;
+    text-align: center;
+}
+
+.newproj>div {
+    /* border: 2px solid black; */
+    height: 165px;
+    width: 200px;
+    margin: 15px;
+    text-align: center;
+}
+
+#op {
+    /* background-image: url(images\owner-property.webp) ; */
+    /* background-image: url(https://cdn.staticmb.com/magicservicestatic/images/mb-home-web/collection/buy/webp/owner-property.webp); */
+    background: url(https://cdn.staticmb.com/magicservicestatic/images/mb-home-web/collection/buy/webp/owner-property.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    opacity: 0.8;
+}
+
+#op:hover {
+    box-shadow: 5px 10px 8px 10px rgb(165, 159, 159);
+    cursor: pointer;
+}
+
+#projects {
+    /* background-image: url(images\owner-property.webp) ; */
+    /* background-image: url(https://cdn.staticmb.com/magicservicestatic/images/mb-home-web/collection/buy/webp/owner-property.webp); */
+    background: url(https://cdn.staticmb.com/magicservicestatic/images/mb-home-web/collection/buy/webp/new-projects.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    opacity: 0.8;
+}
+
+#projects:hover {
+    box-shadow: 5px 10px 8px 10px rgb(165, 159, 159);
+    cursor: pointer;
+}
+
+#rtmi {
+    /* background-image: url(images\owner-property.webp) ; */
+    /* background-image: url(https://cdn.staticmb.com/magicservicestatic/images/mb-home-web/collection/buy/webp/owner-property.webp); */
+    background: url(https://cdn.staticmb.com/magicservicestatic/images/mb-home-web/collection/buy/webp/ready-to-move-in.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    opacity: 0.8;
+}
+
+#rtmi:hover {
+    box-shadow: 5px 10px 8px 10px rgb(165, 159, 159);
+    cursor: pointer;
+}
+
+#bm {
+    /* background-image: url(images\owner-property.webp) ; */
+    /* background-image: url(https://cdn.staticmb.com/magicservicestatic/images/mb-home-web/collection/buy/webp/owner-property.webp); */
+    background: url(https://cdn.staticmb.com/magicservicestatic/images/mb-home-web/collection/buy/webp/budget-homes.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    opacity: 0.8;
+}
+
+#bm:hover {
+    box-shadow: 5px 10px 8px 10px rgb(165, 159, 159);
+    cursor: pointer;
+}
+
+#cp {
+    /* background-image: url(images\owner-property.webp) ; */
+    /* background-image: url(https://cdn.staticmb.com/magicservicestatic/images/mb-home-web/collection/buy/webp/owner-property.webp); */
+    background: url(https://cdn.staticmb.com/property/microsite/new-banners/project-spotlights/clifton-park-vijay-nagar-indore/img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    opacity: 0.8;
+}
+
+#cp:hover {
+    box-shadow: 5px 10px 8px 10px rgb(165, 159, 159);
+    cursor: pointer;
+}
+
+#vt {
+    /* background-image: url(images\owner-property.webp) ; */
+    /* background-image: url(https://cdn.staticmb.com/magicservicestatic/images/mb-home-web/collection/buy/webp/owner-property.webp); */
+    background: url(https://cdn.staticmb.com/property/microsite/new-banners/project-spotlights/vistara-township-by-pass-road-indore/img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    opacity: 0.8;
+}
+
+#vt:hover {
+    box-shadow: 5px 10px 8px 10px rgb(165, 159, 159);
+    cursor: pointer;
+}
+
+#sr {
+    /* background-image: url(images\owner-property.webp) ; */
+    /* background-image: url(https://cdn.staticmb.com/magicservicestatic/images/mb-home-web/collection/buy/webp/owner-property.webp); */
+    background: url(https://cdn.staticmb.com/property/microsite/new-banners/project-spotlights/sahaj-residency-schemeno-103-indore/img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    opacity: 0.8;
+}
+
+#sr:hover {
+    box-shadow: 5px 10px 8px 10px rgb(165, 159, 159);
+    cursor: pointer;
+}
+
+#ro {
+    /* background-image: url(images\owner-property.webp) ; */
+    /* background-image: url(https://cdn.staticmb.com/magicservicestatic/images/mb-home-web/collection/buy/webp/owner-property.webp); */
+    background: url(https://cdn.staticmb.com/property/microsite/new-banners/project-spotlights/royal-one-talawali-chanda-indore/img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    opacity: 0.8;
+}
+
+#ro:hover {
+    box-shadow: 5px 10px 8px 10px rgb(165, 159, 159);
+    cursor: pointer;
+}
+
+#cohl {
+    /* background-image: url(images\owner-property.webp) ; */
+    /* background-image: url(https://cdn.staticmb.com/magicservicestatic/images/mb-home-web/collection/buy/webp/owner-property.webp); */
+    background: url(https://cdn.staticmb.com/magicservicestatic/images/revamp/mbhome-web/property-services/webp/graphic-home-loans.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    opacity: 0.8;
+}
+
+#cohl:hover {
+    box-shadow: 5px 10px 8px 10px rgb(165, 159, 159);
+    cursor: pointer;
+}
+
+#pr {
+    /* background-image: url(images\owner-property.webp) ; */
+    /* background-image: url(https://cdn.staticmb.com/magicservicestatic/images/mb-home-web/collection/buy/webp/owner-property.webp); */
+    background: url(https://cdn.staticmb.com/magicservicestatic/images/revamp/mbhome-web/property-services/graphic-pay-rent.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    opacity: 0.8;
+}
+
+#pr:hover {
+    box-shadow: 5px 10px 8px 10px rgb(165, 159, 159);
+    cursor: pointer;
+}
+
+#lr {
+    /* background-image: url(images\owner-property.webp) ; */
+    /* background-image: url(https://cdn.staticmb.com/magicservicestatic/images/mb-home-web/collection/buy/webp/owner-property.webp); */
+    background: url(https://cdn.staticmb.com/magicservicestatic/images/revamp/mbhome-web/property-services/webp/graphic-legal-services.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    opacity: 0.8;
+}
+
+#lr:hover {
+    box-shadow: 5px 10px 8px 10px rgb(165, 159, 159);
+    cursor: pointer;
+}
+
+#vastu {
+    /* background-image: url(images\owner-property.webp) ; */
+    /* background-image: url(https://cdn.staticmb.com/magicservicestatic/images/mb-home-web/collection/buy/webp/owner-property.webp); */
+    background: url(https://cdn.staticmb.com/magicservicestatic/images/revamp/mbhome-web/property-services/webp/graphic-vastu.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    opacity: 0.8;
+}
+
+#vastu:hover {
+    box-shadow: 5px 10px 8px 10px rgb(165, 159, 159);
+    cursor: pointer;
+}
+
+.bottom {
+    display: flex;
+}
+
+.right ul li a img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.right ul li {
+    list-style: none;
+    margin: 10px;
+}
+
+.left {
+    width: 60%;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.right {
+    width: 40%;
+    /* display: flex; */
+}
+
+.right ul {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 60px;
+}
+.left p{
+    margin-top: 40px;
 }
