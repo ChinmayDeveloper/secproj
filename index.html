@@ -16,115 +16,143 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="https://www.androidfreeware.net/img2/com-timesgroup-magicbricks.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="https://www.androidfreeware.net/img2/com-timesgroup-magicbricks.jpg"
+        type="image/x-icon">
+    <link rel="stylesheet" href="css/coupons.css">
+    <script src="coupons.js"></script>
 </head>
 
 <body>
-    <div class="fixednav">
-        <div class="topbar">
-            <a href="#"><img src="images/logo.png" alt=""></a>
-            <button>SignUp</button>
-            <button>LogIn</button>
+    <div id="main">
+        <div class="fixednav">
+            <div class="topbar">
+                <a href="#"><img src="images/logo.png" alt=""></a>
+                <button>SignUp</button>
+                <button>LogIn</button>
+            </div>
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="#">Buy</a></li>
+                        <li><a href="#">Rent</a></li>
+                        <li><a href="#">Sell</a></li>
+                        <li><a href="#">Home Loans</a></li>
+                        <li><a href="#">Property Services</a></li>
+                        <li><a href="#">Post Free Ad</a></li>
+                        <li><a href="#">Pay Your Rent</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <div class="navbar">
-            <nav>
-                <ul>
-                    <li><a href="#">Buy</a></li>
-                    <li><a href="#">Rent</a></li>
-                    <li><a href="#">Sell</a></li>
-                    <li><a href="#">Home Loans</a></li>
-                    <li><a href="#">Property Services</a></li>
-                    <li><a href="#">Post Free Ad</a></li>
-                    <li><a href="#">Pay Your Rent</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">About Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <div class="section">
-        <div class="imagecontainer">
-            <img src="images/pexels-pixabay-280222.jpg" alt="">
-            <div class="caption center">Find a home you'll love</div>
+        <div class="section">
+            <div class="imagecontainer">
+                <img src="images/pexels-pixabay-280222.jpg" alt="">
+                <div class="caption center">Find a home you'll love</div>
 
-            <div class="selectcity">
-                <select>
-                    <option>Select City</option>
-                    <option>Indore</option>
-                    <option>Bhopal</option>
-                    <option>Mumbai</option>
-                    <option>Delhi</option>
-                    <option>Bangalore</option>
-                    <option>Hyderabad</option>
-                </select>
+                <div class="selectcity">
+                    <select>
+                        <option>Select City</option>
+                        <option>Indore</option>
+                        <option>Bhopal</option>
+                        <option>Mumbai</option>
+                        <option>Delhi</option>
+                        <option>Bangalore</option>
+                        <option>Hyderabad</option>
+                    </select>
+                </div>
+                <div class="selectbudget">
+                    <select>
+                        <option>Select Budget</option>
+                        <option>Indore</option>
+                        <option>Bhopal</option>
+                        <option>Mumbai</option>
+                        <option>Delhi</option>
+                        <option>Bangalore</option>
+                        <option>Hyderabad</option>
+                    </select>
+                </div>
+                <div class="selectproptype">
+                    <select>
+                        <option>Select Type of Property</option>
+                        <option>Commercial</option>
+                        <option>Residential</option>
+                    </select>
+                </div>
             </div>
-            <div class="selectbudget">
-                <select>
-                    <option>Select Budget</option>
-                    <option>Indore</option>
-                    <option>Bhopal</option>
-                    <option>Mumbai</option>
-                    <option>Delhi</option>
-                    <option>Bangalore</option>
-                    <option>Hyderabad</option>
-                </select>
+        </div>
+        <div id="coupon">
+            <button onClick="closeCoupon()">&times;</button>
+            <center>
+                <h3>Request Call & talk to expert</h3>
+            </center>
+            <img src="https://media.istockphoto.com/vectors/customer-service-woman-operator-call-center-with-headphones-and-with-vector-id1224838022?k=20&m=1224838022&s=612x612&w=0&h=pu_U-ZtDQixGvfmkdQah2lS1rgmFLH07-Co6bbwzFAw="
+                alt="">
+                <!-- <label for="phone">Enter your phone number:</label> -->
+        </div>
+        <div class="footer">
+            <div class="propincity">
+                <h3>Properties In Indore</h3>
+                <!-- <p>We've got properties in Indore for everyone</p> -->
+                <div id="op">Owner Properties</div>
+                <div id="projects">Projects</div>
+                <div id="rtmi">Ready to move-in</div>
+                <div id="bm">Budget Homes</div>
             </div>
-            <div class="selectproptype">
-                <select>
-                    <option>Select Type of Property</option>
-                    <option>Commercial</option>
-                    <option>Residential</option>
-                </select>
+            <div class="newproj">
+                <h3>New Projects</h3>
+                <div id="cp">Clifton Park </div>
+                <div id="vt">Vistara Township</div>
+                <div id="sr">Sahaj Residency</div>
+                <div id="ro">Royal ONE</div>
             </div>
+            <div class="propservices">
+                <h3>Property Services</h3>
+                <div id="cohl">Cashback on Home Loans</div>
+                <div id="pr">Pay Rent</div>
+                <div id="lr">Legal Services</div>
+                <div id="vastu">Vastu</div>
+            </div>
+            <hr>
+            <footer class="bottom">
+                <div class="left">
+                    <h4>About Magicbricks</h4>
+                    <p>
+                        Magicbricks is a full stack service provider for all real estate needs, with 15+ services
+                        including
+                        home
+                        loans, pay rent, packers and movers, legal assistance, property valuation, and expert advice. As
+                        the
+                        largest platform for buyers and sellers of property to connect in a transparent manner,
+                        Magicbricks
+                        has
+                        an active base of over 15 lakh property listings.
+                    </p>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><a href="#"><img
+                                    src="https://thumbs.dreamstime.com/b/instagram-icon-vector-instagram-multicolor-icon-white-background-134391681.jpg"
+                                    alt=""></a></li>
+                        <li><a href="#"><img src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png"
+                                    alt=""></a></li>
+                        <li><a href="#"><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png"
+                                    alt=""></a></li>
+                        <li><a href="#"><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png"
+                                    alt=""></a></li>
+                        <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
         </div>
     </div>
-    <div class="footer">
-        <div class="propincity">
-            <h3>Properties In Indore</h3>
-            <!-- <p>We've got properties in Indore for everyone</p> -->
-            <div id="op">Owner Properties</div>
-            <div id="projects">Projects</div>
-            <div id="rtmi">Ready to move-in</div>
-            <div id="bm">Budget Homes</div>
-        </div>
-        <div class="newproj">
-            <h3>New Projects</h3>
-            <div id="cp">Clifton Park </div>
-            <div id="vt">Vistara Township</div>
-            <div id="sr">Sahaj Residency</div>
-            <div id="ro">Royal ONE</div>
-        </div>
-        <div class="propservices">
-            <h3>Property Services</h3>
-            <div id="cohl">Cashback on Home Loans</div>
-            <div id="pr">Pay Rent</div>
-            <div id="lr">Legal Services</div>
-            <div id="vastu">Vastu</div>
-        </div>
-        <hr>
-        <footer class="bottom">
-            <div class="left">
-                <h4>About Magicbricks</h4>
-                <p>
-                    Magicbricks is a full stack service provider for all real estate needs, with 15+ services including
-                    home
-                    loans, pay rent, packers and movers, legal assistance, property valuation, and expert advice. As the
-                    largest platform for buyers and sellers of property to connect in a transparent manner, Magicbricks
-                    has
-                    an active base of over 15 lakh property listings.
-                </p>
-            </div>
-            <div class="right">
-                <ul>
-                    <li><a href="#"><img src="https://thumbs.dreamstime.com/b/instagram-icon-vector-instagram-multicolor-icon-white-background-134391681.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png" alt=""></a></li>
-                    <li><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" alt=""></a></li>
-                    <li><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png" alt=""></a></li>
-                    <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt=""></a></li>
-                </ul>
-            </div>
-        </footer>
-    </div>
+    <script>
+        window.onload = loadCoupon()
+    </script>
 </body>
 
 </html>
