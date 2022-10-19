@@ -20,6 +20,17 @@
         type="image/x-icon">
     <link rel="stylesheet" href="css/coupons.css">
     <script src="coupons.js"></script>
+    <script src="https://kit.fontawesome.com/ed863cd340.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-color:white;
+            color:black
+        }
+        .mydark{
+            background-color:black;
+            color:white
+        }
+        </style>
 </head>
 
 <body>
@@ -27,6 +38,7 @@
         <div class="fixednav">
             <div class="topbar">
                 <a href="#"><img src="images/logo.png" alt=""></a>
+                <button id="lightdark" onClick="changeMode()"><i class="fa-solid fa-toggle-off"></i></button>
                 <button>SignUp</button>
                 <button>LogIn</button>
             </div>
@@ -89,7 +101,7 @@
             </center>
             <img src="https://media.istockphoto.com/vectors/customer-service-woman-operator-call-center-with-headphones-and-with-vector-id1224838022?k=20&m=1224838022&s=612x612&w=0&h=pu_U-ZtDQixGvfmkdQah2lS1rgmFLH07-Co6bbwzFAw="
                 alt="">
-                <!-- <label for="phone">Enter your phone number:</label> -->
+            <!-- <label for="phone">Enter your phone number:</label> -->
         </div>
         <div class="footer">
             <div class="propincity">
@@ -151,7 +163,16 @@
         </div>
     </div>
     <script>
-        window.onload = loadCoupon()
+        window.onload = loadCoupon();
+        function changeMode() {
+            let lightdark = document.getElementById("lightdark")
+            lightdark.classList.remove("fa-toggle-off")
+            lightdark.classList.add("fa-toggle-on")
+            let mybody = document.body;
+            mybody.classList.toggle('mydark')
+
+        }
+
     </script>
 </body>
 
